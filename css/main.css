@@ -1,19 +1,26 @@
-.window{
-	padding: 16px;
-}
-
 .cover{
 	position: relative;
-	width: 262px;
-	height: 262px;
+	width: 286px;
+	height: 286px;
 	flex: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 	background-color: rgba(255,255,255,0.4);
-	box-shadow: 0 0 16px 0 rgba(0,0,0,0.05);
+	box-shadow: 0px 12px 20px 4px rgba(0,0,0,0.2);
+}
+.cover::before{
+	content: '';
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.4));
 }
 
 .progress{
 	position: absolute;
-	bottom: -8px;
+	bottom: -9px;
 	width: 100%;
 	height: 18px;
 	display: flex;
@@ -35,14 +42,16 @@
 
 .slot{
 	display: flex;
-	justify-content: space-between;
-	height: 24px;
+	justify-content: space-between;    
 	align-items: center;
+	height: 24px;
+	padding: 0px 8px;
+	margin-bottom: 6px;
 }
 .slot div{
 	font-size: 9px;
 	color: white;
-	opacity: 0.6;
+	opacity: 0.7;
 }
 
 .media{
@@ -51,28 +60,29 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	flex: none;
 }
 .media div{
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-width: 100%;
+	position: relative;
 }
 .media .song{
 	font-size: 14px;
-	margin-top: 8px;
-	margin-bottom: 5px;
+	margin-bottom: 6px;
+	font-weight: bold;
 }
 .media .artist{
 	font-size: 12px;
-	opacity: 0.6;
+	opacity: 0.65;
 }
-
 
 .control{
 	display: flex;
 	justify-content: center;
-	margin-bottom: 8px;
+	margin: 24px 0;
 }
 
 .control button{

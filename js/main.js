@@ -92,7 +92,7 @@ const player = (() => {
 				if(immediate) audio.play()
 
 				let cover = data[0].songs[0].al.picUrl
-				cover += '?param=262y262'
+				cover += '?param=286y286'
 				pickPalette(cover).then(color => {
 					color = color.toString().slice(5,-4).split(/\s*,\s*/)
 					element.cover.style.backgroundImage = `url(${cover})`
@@ -222,8 +222,8 @@ const player = (() => {
 		Array.from(['current' ,'duration']).forEach(key => element.slot.appendChild(element[key]))
 		Array.from(['song' ,'artist']).forEach(key => element.media.appendChild(element[key]))
 		Array.from(['cycle', 'previous', 'play', 'next', 'random']).forEach(key => element.control.appendChild(button[key]))
-		Array.from(['cover' ,'slot', 'media', 'control']).forEach(key => element.window.appendChild(element[key]))
-		element.cover.appendChild(element.progress)
+		Array.from(['media', 'slot', 'progress']).forEach(key => element.cover.appendChild(element[key]))
+		Array.from(['cover', 'control']).forEach(key => element.window.appendChild(element[key]))
 		document.body.appendChild(element.window)
 	}
 
