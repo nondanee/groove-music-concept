@@ -59,9 +59,9 @@
 	max-width: 100%;
 }
 .media .song{
-	font-size: 15px;
+	font-size: 14px;
 	margin-top: 8px;
-	margin-bottom: 6px;
+	margin-bottom: 5px;
 }
 .media .artist{
 	font-size: 12px;
@@ -72,6 +72,7 @@
 .control{
 	display: flex;
 	justify-content: center;
+	margin-bottom: 8px;
 }
 
 .control button{
