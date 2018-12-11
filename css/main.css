@@ -1,0 +1,106 @@
+.window{
+	padding: 16px;
+}
+
+.cover{
+	position: relative;
+	width: 262px;
+	height: 262px;
+	flex: none;
+	background-color: rgba(255,255,255,0.4);
+	box-shadow: 0 0 16px 0 rgba(0,0,0,0.05);
+}
+
+.progress{
+	position: absolute;
+	bottom: -8px;
+	width: 100%;
+	height: 18px;
+	display: flex;
+	align-items: center;
+	-webkit-app-region: no-drag;
+}
+.progress .filler{
+	height: 2px;
+	background-color: white;
+	width: 0px;
+	flex: none;
+}
+.progress .cursor{
+	border-radius: 50%;
+	width: 8px;
+	height: 8px;
+	border: 2px solid white;
+}
+
+.slot{
+	display: flex;
+	justify-content: space-between;
+	height: 24px;
+	align-items: center;
+}
+.slot div{
+	font-size: 9px;
+	color: white;
+	opacity: 0.6;
+}
+
+.media{
+	color: white;
+	flex: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.media div{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+}
+.media .song{
+	font-size: 15px;
+	margin-top: 8px;
+	margin-bottom: 6px;
+}
+.media .artist{
+	font-size: 12px;
+	opacity: 0.6;
+}
+
+
+.control{
+	display: flex;
+	justify-content: center;
+}
+
+.control button{
+	font-family: 'groove';
+	color: white;
+	width: 32px;
+	height: 32px;
+	margin: 7px;
+	font-size: 18px;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+.control button:hover{
+	opacity: 0.6;
+}
+.control button:active{
+	opacity: 0.9;
+}
+.control button:nth-of-type(4n + 1){
+	font-size: 16px;
+}
+.control button:nth-of-type(3){
+	border: 2px solid white;
+	width: 46px;
+	height: 46px;
+	margin: 0;
+}
+.control button.random.on,
+.control button.cycle.all,
+.control button.cycle.single{
+	background-color: rgba(255,255,255,0.2);
+}
