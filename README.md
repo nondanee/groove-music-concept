@@ -19,7 +19,7 @@ This project is an [Electron-based](https://github.com/electron/electron) implem
 
 ## Preview
 
-<img src="https://user-images.githubusercontent.com/26399680/49814536-c8323e80-fda4-11e8-9e59-0c6cae77795b.png" width="20%"/><img src="https://user-images.githubusercontent.com/26399680/49814538-c8cad500-fda4-11e8-9ce4-1155019fa2d5.png" width="20%"/><img src="https://user-images.githubusercontent.com/26399680/49814540-c9636b80-fda4-11e8-946f-eb1154895edb.png" width="20%"/><img src="https://user-images.githubusercontent.com/26399680/49814541-c9636b80-fda4-11e8-9177-dd1cf27e62a8.png" width="20%"/><img src="https://user-images.githubusercontent.com/26399680/49814543-c9636b80-fda4-11e8-9759-26fa19e32451.png" width="20%"/>
+<img src="https://user-images.githubusercontent.com/26399680/50446680-35bb9e80-0951-11e9-8413-85a1432350c2.png" width="20%"/><img src="https://user-images.githubusercontent.com/26399680/50446685-39e7bc00-0951-11e9-8bd6-7f9ce3559c6a.png" width="20%"/><img src="https://user-images.githubusercontent.com/26399680/50446687-3b18e900-0951-11e9-8fa2-b5b2d0b1d6f9.png" width="20%"/><img src="https://user-images.githubusercontent.com/26399680/50446693-3ce2ac80-0951-11e9-983b-9900c1559b67.png" width="20%"/><img src="https://user-images.githubusercontent.com/26399680/50446695-3d7b4300-0951-11e9-9692-50ebbd1c4756.png" width="20%"/>
 
 ## License
 
