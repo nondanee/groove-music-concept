@@ -93,6 +93,7 @@ const player = (() => {
 
 				let cover = data[0].songs[0].al.picUrl
 				cover += '?param=286y286'
+
 				pickPalette(cover).then(color => {
 					color = color.toString().slice(5,-4).split(/\s*,\s*/)
 					element.cover.style.backgroundImage = `url(${cover})`
@@ -233,7 +234,6 @@ const player = (() => {
 	
 })()
 
-
 const api = (() => {
 	const request = (path, data) => new Promise((resolve, reject) => {
 		data = Object.keys(data).map(key => (encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))).join('&')
@@ -246,9 +246,9 @@ const api = (() => {
 		}
 
 		xhr.open('GET', `http://music.163.com/api/${path}?${data}`)
-		xhr.setRequestHeader('X-Real-IP', '118.88.88.88')
+		xhr.setRequestHeader('X-Real-IP', '115.28.154.44')
 		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
-		xhr.send(data)
+		xhr.send()
 	})
 
 	return {

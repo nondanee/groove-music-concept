@@ -1,19 +1,19 @@
 {
   "name": "groove-music-concept",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Concept shows off Groove Music",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "electron-rebuild",
+    "start": "electron ."
   },
   "author": "nondanee",
   "license": "MIT",
   "dependencies": {
-    "electron": "^3.0.10",
+    "electron": "^3.1.9",
     "windows-swca": "^1.1.1"
   },
   "devDependencies": {
-    "electron-rebuild": "^1.8.2"
+    "electron-rebuild": "^1.8.4"
   }
 }

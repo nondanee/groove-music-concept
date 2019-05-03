@@ -7,6 +7,7 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	background-color: rgba(255,255,255,0.4);
+	background-size: cover;
 	box-shadow: 0px 12px 36px 0px rgba(0,0,0,0.2);;
 }
 .cover::before{

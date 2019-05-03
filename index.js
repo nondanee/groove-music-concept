@@ -23,7 +23,7 @@ const createWindow = () => {
 		title: package.name
 	})
 
-	if(process.platform === 'win32') swca.SetWindowCompositionAttribute(mainWindow, swca.AccentState.ACCENT_ENABLE_FLUENT, 0x01000000)
+	if(process.platform === 'win32') swca.SetWindowCompositionAttribute(mainWindow.getNativeWindowHandle(), 4, 0x10000000)
 
 	mainWindow.loadURL(url.format({
 		pathname: path.join(__dirname, 'index.html'),
