@@ -10,7 +10,7 @@
   "author": "nondanee",
   "license": "MIT",
   "dependencies": {
-    "electron": "^3.1.10",
+    "electron": "^9.1.0",
     "windows-swca": "^2.0.2"
   },
   "devDependencies": {
